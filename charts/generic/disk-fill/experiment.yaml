@@ -45,7 +45,7 @@ spec:
           - "update"
           - "delete"
           - "deletecollection"
-    image: "litmuschaos/go-runner:latest"
+    image: "nexus-docker.ubs.net:18080/ubs/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -83,7 +83,7 @@ spec:
       value: ''
 
     - name: LIB_IMAGE
-      value: 'litmuschaos/go-runner:latest'
+      value: 'nexus-docker.ubs.net:18080/litmuschaos/go-runner:latest'
 
     # Provide the container runtime path
     # Default set to docker container path
