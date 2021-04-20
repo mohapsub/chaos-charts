@@ -65,7 +65,7 @@ spec:
       value: 'nexus-docker.ubs.net:18080/litmuschaos/go-runner:latest' 
 
     - name: TC_IMAGE
-      value: 'nexus-docker.ubs.net:18080/gaiadocker/iproute2'
+      value: 'nexus-docker.ubs.net:18076/gaiadocker/iproute2'
 
     - name: NETWORK_LATENCY
       value: '2000' #in ms
