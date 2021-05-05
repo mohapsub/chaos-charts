@@ -46,7 +46,7 @@ spec:
           - "update"
           - "delete"
           - "deletecollection"
-    image: "nexus-docker.ubs.net:18080/litmuschaos/go-runner:1.12.0"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:1.12.0"
     imagePullPolicy: Always
     args:
     - -c
