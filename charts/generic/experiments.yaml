@@ -45,7 +45,7 @@ spec:
         - "update"
         - "delete"
         - "deletecollection"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -59,7 +59,7 @@ spec:
 
     # provide lib image
     - name: LIB_IMAGE
-      value: 'litmuschaos/go-runner:latest' 
+      value: 'poc-container-registry.ubs.net/litmuschaos/go-runner:latest' 
 
     - name: NETWORK_INTERFACE
       value: 'eth0'
@@ -165,7 +165,7 @@ spec:
         verbs:
           - "get"
           - "list"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -190,7 +190,7 @@ spec:
 
     # provide lib image
     - name: LIB_IMAGE
-      value: "litmuschaos/go-runner:latest"
+      value: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
 
     # ENTER THE TARGET NODE NAME
     - name: TARGET_NODE
@@ -260,7 +260,7 @@ spec:
           - "create"
           - "patch"
           - "update"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -338,7 +338,7 @@ spec:
           - "patch"
           - "delete"
           - "deletecollection"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -387,7 +387,7 @@ spec:
       value: ''
 
     - name: LIB_IMAGE  
-      value: 'litmuschaos/go-runner:latest' 
+      value: 'poc-container-registry.ubs.net/litmuschaos/go-runner:latest' 
 
     ## it defines the sequence of chaos execution for multiple target pods
     ## supported values: serial, parallel
@@ -445,7 +445,7 @@ spec:
         verbs:
           - "get"
           - "list"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -477,7 +477,7 @@ spec:
 
     # provide lib image
     - name: LIB_IMAGE
-      value: 'litmuschaos/go-runner:latest' 
+      value: 'poc-container-registry.ubs.net/litmuschaos/go-runner:latest' 
 
     ## percentage of total nodes to target
     - name: NODES_AFFECTED_PERC
@@ -539,7 +539,7 @@ spec:
         verbs:
           - "get"
           - "list"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -576,7 +576,7 @@ spec:
 
     # provide lib image
     - name: LIB_IMAGE
-      value: 'litmuschaos/go-runner:latest' 
+      value: 'poc-container-registry.ubs.net/litmuschaos/go-runner:latest' 
 
     ## percentage of total nodes to target
     - name: NODES_AFFECTED_PERC
@@ -641,7 +641,7 @@ spec:
           - "update"
           - "delete"
           - "deletecollection"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -658,7 +658,7 @@ spec:
 
     # provide lib image
     - name: LIB_IMAGE
-      value: 'litmuschaos/go-runner:latest' 
+      value: 'poc-container-registry.ubs.net/litmuschaos/go-runner:latest' 
 
     - name: TC_IMAGE
       value: 'gaiadocker/iproute2'
@@ -760,7 +760,7 @@ spec:
         verbs:
           - "get"
           - "list"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -843,7 +843,7 @@ spec:
           - "get"
           - "list"
           - "patch"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -922,7 +922,7 @@ spec:
           - "update"
           - "delete"
           - "deletecollection"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -970,7 +970,7 @@ spec:
 
       # provide lib image
       - name: LIB_IMAGE
-        value: 'litmuschaos/go-runner:latest'
+        value: 'poc-container-registry.ubs.net/litmuschaos/go-runner:latest'
 
       # provide the socket file path
       # it is used in pumba lib
@@ -1034,7 +1034,7 @@ spec:
         verbs:
           - "get"
           - "list"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -1065,7 +1065,7 @@ spec:
 
     # provide lib image
     - name: LIB_IMAGE
-      value: "litmuschaos/go-runner:latest"
+      value: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
 
     # ENTER THE TARGET NODE NAME
     - name: TARGET_NODE
@@ -1132,7 +1132,7 @@ spec:
           - "update"
           - "get"
           - "deletecollection"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -1146,7 +1146,7 @@ spec:
 
     # provide lib image
     - name: LIB_IMAGE
-      value: 'litmuschaos/go-runner:latest' 
+      value: 'poc-container-registry.ubs.net/litmuschaos/go-runner:latest' 
 
     - name: NETWORK_INTERFACE
       value: 'eth0'
@@ -1250,7 +1250,7 @@ spec:
         verbs :
           - "get"
           - "list"
-    image: "litmuschaos/chaostoolkit:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/chaostoolkit:latest"
     args:
     - -c
     - python /app/chaos/chaostest/kubernetes/k8_wrapper.py; exit 0
@@ -1340,7 +1340,7 @@ spec:
           - "update"
           - "delete"
           - "deletecollection"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -1438,7 +1438,7 @@ spec:
     labels:
       name: k8-service-kill    
       app.kubernetes.io/part-of: litmus
-    image: "litmuschaos/chaostoolkit:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/chaostoolkit:latest"
     args:
     - -c
     - python /app/chaos/chaostest/kubernetes/k8_wrapper.py; exit 0
@@ -1510,7 +1510,7 @@ spec:
           - "patch"
           - "update"
           - "delete"
-    image: "litmuschaos/ansible-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/ansible-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -1608,7 +1608,7 @@ spec:
         verbs:
           - "get"
           - "list"
-    image: "litmuschaos/ansible-runner:ci"
+    image: "poc-container-registry.ubs.net/litmuschaos/ansible-runner:ci"
     imagePullPolicy: Always
     args:
     - -c
@@ -1683,7 +1683,7 @@ spec:
           - "update"
           - "delete"
           - "deletecollection"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -1788,7 +1788,7 @@ spec:
           - "update"
           - "delete"
           - "deletecollection"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -1879,7 +1879,7 @@ spec:
         - "update"
         - "delete"
         - "deletecollection"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -1998,7 +1998,7 @@ spec:
           - "update"
           - "delete"
           - "deletecollection"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -2094,7 +2094,7 @@ spec:
         verbs:
           - "get"
           - "list"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
@@ -2203,7 +2203,7 @@ spec:
           - "list"
           - "patch"
           - "update"
-    image: "litmuschaos/go-runner:latest"
+    image: "poc-container-registry.ubs.net/litmuschaos/go-runner:latest"
     imagePullPolicy: Always
     args:
     - -c
